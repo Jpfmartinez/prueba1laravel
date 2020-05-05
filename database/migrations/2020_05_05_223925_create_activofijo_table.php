@@ -15,6 +15,14 @@ class CreateActivofijoTable extends Migration
     {
         Schema::create('activofijo', function (Blueprint $table) {
             $table->id();
+            $table->string('numInventario')->unique();
+            $table->string('tipo');
+            $table->string('descripcion');
+            $table->string('numSerie')->nullable();
+            $table->string('resguardo');
+            $table->decimal('valorAdqui');
+            $table->boolean('verificado')->nullable();
+            $table->integer('numTrabajador')->nullable();
             $table->timestamps();
         });
     }

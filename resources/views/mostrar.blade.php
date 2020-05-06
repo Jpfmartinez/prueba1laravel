@@ -17,7 +17,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach($activos as $activo)
+		@foreach($activo as $activos)
 		<tr>
 			<td>{!! $activo->id !!}</td>
 			<td>{!! $activo->numInventario !!}</td>

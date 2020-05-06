@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\ActivoFijoModel;
 class ActivoFijoController extends Controller
 {
     /**
@@ -14,7 +14,9 @@ class ActivoFijoController extends Controller
     public function index()
     {
         //
-        
+        $activo = ActivoFijoModel::get();
+        return view('mostrar', compact('activo'));
+
     }
 
     /**

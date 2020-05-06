@@ -35,7 +35,7 @@
 				@endif
 			</td>
 			<td>{{ $activos->numTrabajador }}</td>
-			<td><input type="button" name="Editar" value="EDITAR">
+			<td><input type="button" name="Editar" value="EDITAR" href="{{route('editar'), $activo}}">
 				<input type="button" name="Borrar" value="BORRAR"></td>
 		</tr>
 

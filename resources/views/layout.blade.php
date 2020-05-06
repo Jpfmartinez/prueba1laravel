@@ -8,7 +8,6 @@
 	<nav>
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/mostrar">Mostar datos</a></li>
 			<li><a href="/agregar">Añadir un activo</a></li>
 		</ul>
 	</nav>

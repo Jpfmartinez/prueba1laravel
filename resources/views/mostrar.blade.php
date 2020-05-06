@@ -26,7 +26,13 @@
 			<td>{{ $activos->numSerie }}</td>
 			<td>{{ $activos->resguardo }}</td>
 			<td>{{ $activos->valorAdqui }}</td>
-			<td>{{ $activos->verificado }}</td>
+			<td>
+				@if( $activos->verificado ===1 )
+					SI
+				@else
+					NO
+				@endif
+			</td>
 			<td>{{ $activos->numTrabajador }}</td>
 		</tr>
 		@endforeach

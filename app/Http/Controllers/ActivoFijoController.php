@@ -26,7 +26,7 @@ class ActivoFijoController extends Controller
      */
     public function create()
     {
-        //
+        return view('agregar');
     }
 
     /**
@@ -37,7 +37,7 @@ class ActivoFijoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return request('numInventario');
     }
 
     /**

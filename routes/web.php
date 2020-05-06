@@ -5,4 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'ActivoFijoController@index')->name('mostrar');
-Route::view('/agregar', 'agregar')->name('agregar');
+Route::get('/agregar', 'ActivoFijoController@create')->name('agregar');
+//
+Route::post('/agregar', 'ActivoFijoController@store')->name('addActivo');

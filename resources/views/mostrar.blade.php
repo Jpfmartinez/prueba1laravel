@@ -14,6 +14,7 @@
 			<th>Valor de adquisicion</th>
 			<th>Verificado</th>
 			<th>No de Trabajador</th>
+			<th>Acciones</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -34,7 +35,10 @@
 				@endif
 			</td>
 			<td>{{ $activos->numTrabajador }}</td>
+			<td><input type="button" name="Editar" value="EDITAR">
+				<input type="button" name="Borrar" value="BORRAR"></td>
 		</tr>
+
 		@endforeach
 	</tbody>
 </table>

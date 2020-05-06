@@ -2,50 +2,57 @@
 
 @section('content')
 <h1>Editar registro</h1>
-<form method="POST" action="{{ route('addActivo' )}}">
-	@csrf
+<form method="POST" action="{{ route('actualizar', $activo)}}">
+	@csrf @method('PATCH')
 	<p>Num. Inventario:
-		<input type="text" name="numInventario"></p>
+		<input type="text" name="numInventario" value="{{$activo->numInventario}}"></p>
 		<p>Tipo: <select name="tipo">
-			<option value="Terrenos">Terrenos</option>
-			<option value="Edificios Administrativos" selected>Edificios Administrativos</option>
-			<option value="Equipo de Cómputo y de Tecnologías de la Información">Equipo de Cómputo y de Tecnologías de la Información </option>
-			<option value="Vehículos y Equipo Terrestre">Vehículos y Equipo Terrestre</option>
-			<option value="Muebles de Oficina y Estantería">Muebles de Oficina y Estantería</option>
-			<option value="Otros Mobiliarios y Equipos de Administración">Otros Mobiliarios y Equipos de Administración</option>
-			<option value="Cámaras Fotográficas y de Video">Cámaras Fotográficas y de Video</option>
+			<option>{{$activo->tipo}}</option>
+			<option >Terrenos</option>
+			<option >Edificios Administrativos</option>
+			<option >Equipo de Cómputo y de Tecnologías de la Información </option>
+			<option >Vehículos y Equipo Terrestre</option>
+			<option >Muebles de Oficina y Estantería</option>
+			<option >Otros Mobiliarios y Equipos de Administración</option>
+			<option >Cámaras Fotográficas y de Video</option>
 		</select></p>
 		<p>Descripcion:
-			<textarea name="descripcion"></textarea>
+			<textarea name="descripcion" >{{$activo->descripcion}}</textarea>
 		</p>
 		<p>Num. de Serie
-			<input type="text" name="numSerie"></p>
+			<input type="text" name="numSerie" value="{{$activo->numSerie}}"></p>
 			<p>Resguardo
 				<select name="resguardo">
-					<option value="Presidencia" selected>Presidencia</option>
-					<option value="Contabilidad">Contabilidad </option>
-					<option value="Comunicación Social">Comunicación Social </option>
-					<option value="Recepción">Recepción</option>
-					<option value="Coord. Jurídica">Coord. Jurídica</option>
-					<option value="Trabajo Social">Trabajo Social</option>
-					<option value="Psicología">Psicología</option>
-					<option value="Alimentación">Alimentación</option>
-					<option value="Dirección General">Dirección General</option>
-					<option value="INAPAM">INAPAM</option>
-					<option value="PANNAR">PANNAR</option>
-					<option value="Cocina">Cocina</option>
+					<option>{{$activo->resguardo}}</option>
+					<option >Presidencia</option>
+					<option >Contabilidad </option>
+					<option >Comunicación Social </option>
+					<option >Recepción</option>
+					<option >Coord. Jurídica</option>
+					<option >Trabajo Social</option>
+					<option >Psicología</option>
+					<option >Alimentación</option>
+					<option >Dirección General</option>
+					<option >INAPAM</option>
+					<option >PANNAR</option>
+					<option >Cocina</option>
 				</select>
 			</p>
 			<p>Valor de Adquisición
-				<input type="number" name="valorAdquisitivo">
+				<input type="number" name="valorAdquisitivo" value="{{$activo->valorAdqui}}">
 			</p>
 
 			<p>Verificado
-				<input type="radio" name="verificado" value="0">Si
-				<input type="radio" name="verificado" value="1">No
+				@if($activo->verificado === 1)
+				<input type="radio" name="verificado" value="1" checked="true">Si
+				<input type="radio" name="verificado" value="0">No
+				@else
+				<input type="radio" name="verificado" value="1">Si
+				<input type="radio" name="verificado" value="0" checked="true">No
+				@endif
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador"></p>
+			<p>Numero de trabajador <input type="number" name="numTrabajador" value="{{$activo->numTrabajador}}"></p>
 
-			<button>Añadir activo</button>
+			<button>Actualizar</button>
 		</form>
 		@endsection

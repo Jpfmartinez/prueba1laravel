@@ -78,7 +78,7 @@ class ActivoFijoController extends Controller
     {
         //
         return view('editar', [
-         'numTrabajador' => $id
+         'activo' => $id
        ]);
 
     }
@@ -90,9 +90,9 @@ class ActivoFijoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update()
     {
-        //
+
     }
 
     /**

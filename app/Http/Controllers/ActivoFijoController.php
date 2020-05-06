@@ -14,6 +14,7 @@ class ActivoFijoController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**

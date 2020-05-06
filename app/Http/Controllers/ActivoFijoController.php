@@ -38,7 +38,7 @@ class ActivoFijoController extends Controller
     public function store(Request $request)
     {
 
-        return ActivoFijoModel::create([
+        ActivoFijoModel::create([
             'numInventario' => request('numInventario'),
             'tipo'=>request('tipo'),
             'descripcion'=>request('descripcion'),
@@ -48,6 +48,8 @@ class ActivoFijoController extends Controller
             'verificado'=>request('verificado'),
             'numTrabajador'=>request('numTrabajador')
         ]);
+
+        return redirect()->route('mostrar');
     }
 
     /**

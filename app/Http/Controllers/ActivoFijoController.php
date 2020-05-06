@@ -90,8 +90,19 @@ class ActivoFijoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update()
+    public function update(ActivoFijoModel $id)
     {
+        $id->update([
+          'numInventario' => request('numInventario'),
+          'tipo'=>request('tipo'),
+          'descripcion'=>request('descripcion'),
+          'numSerie'=>request('numSerie'),
+          'resguardo'=>request('resguardo'),
+          'valorAdqui'=>request('valorAdquisitivo'),
+          'verificado'=>request('verificado'),
+          'numTrabajador'=>request('numTrabajador'),
+        ]);
+        return redirect()->route('mostrar');
 
     }
 

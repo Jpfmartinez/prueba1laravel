@@ -22,18 +22,18 @@
 			<input type="text" name="numSerie"></p>
 			<p>Resguardo
 				<select name="resguardo">
-					<option value="value1" selected>Presidencia</option>
-					<option value="value2">Contabilidad </option>
-					<option value="value3">Comunicación Social </option>
-					<option value="value4">Recepción</option>
-					<option value="value5">Coord. Jurídica</option>
-					<option value="value6">Trabajo Social</option>
-					<option value="value7">Psicología</option>
-					<option value="value8">Alimentación</option>
-					<option value="value9">Dirección General</option>
-					<option value="value10">INAPAM</option>
-					<option value="value11">PANNAR</option>
-					<option value="value12">Cocina</option>
+					<option value="Presidencia" selected>Presidencia</option>
+					<option value="Contabilidad">Contabilidad </option>
+					<option value="Comunicación Social">Comunicación Social </option>
+					<option value="Recepción">Recepción</option>
+					<option value="Coord. Jurídica">Coord. Jurídica</option>
+					<option value="Trabajo Social">Trabajo Social</option>
+					<option value="Psicología">Psicología</option>
+					<option value="Alimentación">Alimentación</option>
+					<option value="Dirección General">Dirección General</option>
+					<option value="INAPAM">INAPAM</option>
+					<option value="PANNAR">PANNAR</option>
+					<option value="Cocina">Cocina</option>
 				</select>
 			</p>
 			<p>Valor de Adquisición

@@ -37,7 +37,36 @@ class ActivoFijoController extends Controller
      */
     public function store(Request $request)
     {
-        return request('numInventario');
+
+       /* return request(['numInventario', 'tipo', 'descripcion','numSerie','resguardo', 'valorAdquisitivo', 'verificado', 'numTrabajador']);*/
+
+        return ActivoFijoModel::create([
+            'numInventario' => request('numInventario'),
+            'tipo'=>request('tipo'),
+            'descripcion'=>request('descripcion'),
+            'numSerie'=>request('numSerie'),
+            'resguardo'=>request('resguardo'),
+            'valorAdqui'=>request('valorAdquisitivo'),
+            'verificado'=>request('verificado'),
+            'numTrabajador'=>request('numTrabajador')
+        ]);
+        /*return ActivoFijoModel::create([
+            'numInventario' -> request('numInventario'),
+
+            'tipo'->request('tipo'),
+
+            'descripcion' -> request('descripcion'),
+
+            'numSerie' -> request('numSerie'),
+
+            'resguardo' -> request('resguardo'),
+
+            'valorAdqui' -> request('valorAdquisitivo',
+
+            'verificado' -> request('verificado'),
+
+            'numTrabajador' -> request('numTrabajador'),
+        ]);*/
     }
 
     /**

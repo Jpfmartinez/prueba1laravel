@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h1>AGREGAR</h1>
+<h1>Editar registro</h1>
 <form method="POST" action="{{ route('addActivo' )}}">
 	@csrf
 	<p>Num. Inventario:

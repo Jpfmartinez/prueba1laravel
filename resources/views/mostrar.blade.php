@@ -38,7 +38,7 @@
 			<td>
 
 		   <a href="{{route('show',$activos)}}"><input type="button" value="ver"></a>
-				<a href="">editar</a>
+			 <a href="{{route('editar',$activos)}}"><input type="button" value="editar"></a>
 				<input type="button" name="Borrar" value="BORRAR"></td>
 		</tr>
 

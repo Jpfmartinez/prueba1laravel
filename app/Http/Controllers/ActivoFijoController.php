@@ -74,15 +74,12 @@ class ActivoFijoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(ActivoFijoModel $id)
     {
         //
-    /*    return view('mostrar',[
-          'activo'=> $activo
-
-
-        ]);
-*/
+        return view('editar', [
+         'numTrabajador' => $id
+       ]);
 
     }
 

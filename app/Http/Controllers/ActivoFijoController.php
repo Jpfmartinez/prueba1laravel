@@ -61,6 +61,11 @@ class ActivoFijoController extends Controller
     public function show($id)
     {
         //
+        return ActivoFijoModel::find($id);
+
+    /*  return view('editar', [
+      'numTrabajador' => ActivoFijoModel::find($id)
+    ]);*/
     }
 
     /**
@@ -69,7 +74,7 @@ class ActivoFijoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(ActivoFijoModel $activo)
+    public function edit($id)
     {
         //
     /*    return view('mostrar',[

@@ -19,15 +19,15 @@
 	<tbody>
 		@foreach($activo as $activos)
 		<tr>
-			<td>{!! $activo->id !!}</td>
-			<td>{!! $activo->numInventario !!}</td>
-			<td>{!! $activo->tipo !!}</td>
-			<td>{!! $activo->descripcion !!}</td>
-			<td>{!! $activo->numSerie !!}</td>
-			<td>{!! $activo->resguardo !!}</td>
-			<td>{!! $activo->valorAdqui !!}</td>
-			<td>{!! $activo->verificado !!}</td>
-			<td>{!! $activo->numTrabajador !!}</td>
+			<td>{{ $activos ->id}}</td>
+			<td>{{ $activos->numInventario }}</td>
+			<td>{{ $activos->tipo }}</td>
+			<td>{{ $activos->descripcion }}</td>
+			<td>{{ $activos->numSerie }}</td>
+			<td>{{ $activos->resguardo }}</td>
+			<td>{{ $activos->valorAdqui }}</td>
+			<td>{{ $activos->verificado }}</td>
+			<td>{{ $activos->numTrabajador }}</td>
 
 		</tr>
 		@endforeach

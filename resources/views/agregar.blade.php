@@ -44,7 +44,7 @@
 				<input type="radio" name="verificado" value="1">Si
 				<input type="radio" name="verificado" value="0" checked="true">No
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador"></p>
+			<p>Numero de trabajador <input type="number" name="numTrabajador" min="0"></p>
 
 			<button>Añadir activo</button>
 		</form>

@@ -39,7 +39,11 @@
 
 		   <a href="{{route('show',$activos)}}"><input type="button" value="ver"></a>
 			 <a href="{{route('editar',$activos)}}"><input type="button" value="editar"></a>
-				<input type="button" name="Borrar" value="BORRAR"></td>
+			 <form method="POST" action="{{route('borrar',$activos)}}">
+ 			  @csrf @method('DELETE')
+ 			 <button type="button" name="button">eliminar</button>
+ 			</form>
+			</td>
 		</tr>
 
 		@endforeach

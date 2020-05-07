@@ -11,5 +11,7 @@ Route::get('/editar/{id}','ActivoFijoController@edit')->name('editar');
 Route::patch('/editar/{id}','ActivoFijoController@update')->name('actualizar');
 
 Route::get('/{id}', 'ActivoFijoController@show')->name('show');
+
+Route::delete('/{id}','ActivoFijoController@destroy')->name('borrar');
 //
 Route::post('/agregar', 'ActivoFijoController@store')->name('addActivo');

@@ -39,7 +39,7 @@
 				</select>
 			</p>
 			<p>Valor de Adquisición
-				<input type="number" name="valorAdquisitivo" value="{{$activo->valorAdqui}}">
+				<input type="number" name="valorAdquisitivo" value="{{$activo->valorAdqui}}" min="0">
 			</p>
 
 			<p>Verificado
@@ -51,7 +51,7 @@
 				<input type="radio" name="verificado" value="0" checked="true">No
 				@endif
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador" value="{{$activo->numTrabajador}}"></p>
+			<p>Numero de trabajador <input type="number" name="numTrabajador" value="{{$activo->numTrabajador}}" min="0"></p>
 
 			<button>Actualizar</button>
 		</form>

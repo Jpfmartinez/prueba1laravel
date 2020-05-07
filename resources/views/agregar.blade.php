@@ -5,8 +5,8 @@
 <form method="POST" action="{{ route('addActivo' )}}">
 	@csrf
 	<p>Num. Inventario:
-		<input type="text" name="numInventario"></p>
-		<p>Tipo: <select name="tipo">
+		<input type="text" name="numInventario" required></p>
+		<p>Tipo: <select name="tipo" required>
 			<option >Terrenos</option>
 			<option selected>Edificios Administrativos</option>
 			<option >Equipo de Cómputo y de Tecnologías de la Información </option>
@@ -16,12 +16,12 @@
 			<option >Cámaras Fotográficas y de Video</option>
 		</select></p>
 		<p>Descripcion:
-			<textarea name="descripcion"></textarea>
+			<textarea name="descripcion" required></textarea>
 		</p>
 		<p>Num. de Serie
 			<input type="text" name="numSerie"></p>
 			<p>Resguardo
-				<select name="resguardo">
+				<select name="resguardo" required>
 					<option selected>Presidencia</option>
 					<option >Contabilidad </option>
 					<option >Comunicación Social </option>
@@ -37,14 +37,14 @@
 				</select>
 			</p>
 			<p>Valor de Adquisición
-				<input type="number" name="valorAdquisitivo">
+				<input type="number" name="valorAdquisitivo" min="0">
 			</p>
 
 			<p>Verificado
 				<input type="radio" name="verificado" value="1">Si
-				<input type="radio" name="verificado" value="0">No
+				<input type="radio" name="verificado" value="0" checked="true">No
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador" value=""></p>
+			<p>Numero de trabajador <input type="number" name="numTrabajador"></p>
 
 			<button>Añadir activo</button>
 		</form>

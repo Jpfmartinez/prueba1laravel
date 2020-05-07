@@ -26,7 +26,7 @@
 			<td>{{ $activos->descripcion }}</td>
 			<td>{{ $activos->numSerie }}</td>
 			<td>{{ $activos->resguardo }}</td>
-			<td>{{ $activos->valorAdqui }}</td>
+			<td>${{ $activos->valorAdqui }}</td>
 			<td>
 				@if( $activos->verificado ===1 )
 					SI

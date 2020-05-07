@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+
 <h1>AGREGAR</h1>
 <form method="POST" action="{{ route('addActivo' )}}">
 	@csrf

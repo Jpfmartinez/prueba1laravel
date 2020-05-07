@@ -37,7 +37,8 @@ background-color: #dddddd;
 	<tbody>
 		@foreach($activo as $activos)
 		<tr>
-			<td>{{ $activos ->id}}</td>
+
+			<td>{{$loop->iteration}}</td>
 			<td>{{ $activos->numInventario }}</td>
 			<td>{{ $activos->tipo }}</td>
 			<td>{{ $activos->descripcion }}</td>
@@ -63,7 +64,6 @@ background-color: #dddddd;
  			</form>
 			</td>
 		</tr>
-
 		@endforeach
 	</tbody>
 </table>

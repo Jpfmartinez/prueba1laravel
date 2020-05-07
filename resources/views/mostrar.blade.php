@@ -37,11 +37,12 @@
 			<td>{{ $activos->numTrabajador }}</td>
 			<td>
 
-		   <a href="{{route('show',$activos)}}"><input type="button" value="ver"></a>
-			 <a href="{{route('editar',$activos)}}"><input type="button" value="editar"></a>
+{{-- 		   	<a href="{{route('show',$activos)}}"><input type="button" value="ver"></a> --}}
+			<a href="{{route('editar',$activos)}}"><input type="button" value="editar"></a>
+
 			 <form method="POST" action="{{route('borrar',$activos)}}">
  			  @csrf @method('DELETE')
- 			 <button type="button" name="button">eliminar</button>
+ 			 <button>eliminar</button>
  			</form>
 			</td>
 		</tr>

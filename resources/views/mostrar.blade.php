@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h1>MOSTAR</h1>
+<h1>Inventario</h1>
 <style>
 table {
 font-family: arial, sans-serif;

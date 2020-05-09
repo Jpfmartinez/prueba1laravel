@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+//Trabajadores
+Route::resource('trabajadores','trabajadorController');
 
 Route::get('/', 'ActivoFijoController@index')->name('mostrar');
 Route::get('/agregar', 'ActivoFijoController@create')->name('agregar');

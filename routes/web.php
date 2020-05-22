@@ -19,4 +19,4 @@ Route::delete('/{id}','ActivoFijoController@destroy')->name('borrar');
 Route::post('/agregar', 'ActivoFijoController@store')->name('addActivo');
 
 //BITACORAS RUTAS
-Route::get('/bitacora','')->name('verBitacora');
+//Route::get('/bitacora','')->name('verBitacora');

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 //Trabajadores
 Route::resource('trabajadores','trabajadorController');
 
+//ACTIVOS FIJOS RUTAS
 Route::get('/', 'ActivoFijoController@index')->name('mostrar');
 Route::get('/agregar', 'ActivoFijoController@create')->name('agregar');
 
@@ -16,3 +17,6 @@ Route::get('/{id}', 'ActivoFijoController@show')->name('show');
 Route::delete('/{id}','ActivoFijoController@destroy')->name('borrar');
 //
 Route::post('/agregar', 'ActivoFijoController@store')->name('addActivo');
+
+//BITACORAS RUTAS
+Route::get('/bitacora','')->name('verBitacora');

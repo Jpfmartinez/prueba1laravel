@@ -9,6 +9,8 @@
 		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/agregar">Añadir un activo</a></li>
+			<li><a href="/trabajadores">Trabajadores</a></li>
+			<li><a href="/bitacora/index">Bitacora</a></li>
 		</ul>
 	</nav>
 	@yield('content')

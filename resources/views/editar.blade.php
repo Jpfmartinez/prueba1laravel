@@ -51,7 +51,7 @@
 				<input type="radio" name="verificado" value="0" checked="true">No
 				@endif
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador" value="{{$activo->numTrabajador}}" min="0"></p>
+			<p>Numero de trabajador <input type="number" name="id_trabajador" value="{{$activo->id_trabajador}}" min="0"></p>
 
 			<button>Actualizar</button>
 		</form>

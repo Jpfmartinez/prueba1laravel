@@ -5,8 +5,8 @@
 <h1>AGREGAR</h1>
 <form method="POST" action="{{ route('addActivo' )}}">
 	@csrf
-	<p>Num. Inventario:
-		<input type="text" name="numInventario" required></p>
+
+		{{ $depreciation->responsable }}
 		<p>Tipo: <select name="tipo" required>
 			<option >Terrenos</option>
 			<option selected>Edificios Administrativos</option>
@@ -45,7 +45,7 @@
 				<input type="radio" name="verificado" value="1">Si
 				<input type="radio" name="verificado" value="0" checked="true">No
 			</p>
-			<p>Numero de trabajador <input type="number" name="numTrabajador" min="0"></p>
+			<p>Numero de trabajador <input type="number" name="id_trabajador" min="0"></p>
 
 			<button>Añadir activo</button>
 		</form>

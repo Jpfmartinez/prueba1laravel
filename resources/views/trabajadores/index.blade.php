@@ -21,6 +21,7 @@
         <tr>
             <th>No</th>
             <th>responsable</th>
+            
             <th>puesto</th>
             <th>departamento</th>
             <th>tipo de contrato</th>

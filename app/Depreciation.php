@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Depreciation extends Model
 {
   protected $fillable = [
-    'noInventario',
+    'id_activofijo',
     'tipo',
     'descripcion',
     'montoOriginal',
@@ -17,4 +17,10 @@ class Depreciation extends Model
     'porDepreciar',
     'depreciacionAc'
   ];
+
+  public function activo()
+  {
+      return $this-> belongsTo(ActivoFijoModel::class,'id_activofijo');
+  }
+
 }

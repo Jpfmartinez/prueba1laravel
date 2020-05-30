@@ -30,7 +30,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Numero de inventario:</strong>
-                <input type="text" name="noInventario" class="form-control" placeholder="Name">
+                <input type="text" name="id_activofijo" class="form-control" placeholder="Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

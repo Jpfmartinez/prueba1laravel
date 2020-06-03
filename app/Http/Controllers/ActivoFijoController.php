@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Trabajador;
 use Illuminate\Http\Request;
 use App\ActivoFijoModel;
 class ActivoFijoController extends Controller
@@ -26,7 +26,8 @@ class ActivoFijoController extends Controller
      */
     public function create()
     {
-        return view('agregar');
+      $depreciation = Trabajador::find(1);
+      return view('agregar',compact('depreciation'));
     }
 
     /**
@@ -46,7 +47,7 @@ class ActivoFijoController extends Controller
             'resguardo'=>request('resguardo'),
             'valorAdqui'=>request('valorAdquisitivo'),
             'verificado'=>request('verificado'),
-            'numTrabajador'=>request('numTrabajador')
+            'id_trabajador'=>request('id_trabajador')
         ]);
 
         return redirect()->route('mostrar');
@@ -100,7 +101,7 @@ class ActivoFijoController extends Controller
           'resguardo'=>request('resguardo'),
           'valorAdqui'=>request('valorAdquisitivo'),
           'verificado'=>request('verificado'),
-          'numTrabajador'=>request('numTrabajador'),
+          'id_trabajador'=>request('id_trabajador'),
         ]);
         return redirect()->route('mostrar');
 

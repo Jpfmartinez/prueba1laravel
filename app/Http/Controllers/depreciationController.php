@@ -79,7 +79,7 @@ class depreciationController extends Controller
     {
       $depreciations = Depreciation::find($id);
 
-      $depreciations->noInventario = $request->get('noInventario');
+      $depreciations->id_activofijo = $request->get('id_activofijo');
       $depreciations->tipo = $request->get('tipo');
       $depreciations->descripcion = $request->get('descripcion');
       $depreciations->montoOriginal = $request->get('montoOriginal');

@@ -19,11 +19,12 @@ tr:nth-child(even) {
 background-color: #dddddd;
 }
 </style>
+
 <table>
 	<thead>
 		<tr>
 			<th>ID</th>
-			<th>No de Inventario</th>
+
 			<th>Tipo</th>
 			<th>Descripcion</th>
 			<th>No de Serie</th>
@@ -39,7 +40,7 @@ background-color: #dddddd;
 		<tr>
 
 			<td>{{$loop->iteration}}</td>
-			<td>{{ $activos->numInventario }}</td>
+
 			<td>{{ $activos->tipo }}</td>
 			<td>{{ $activos->descripcion }}</td>
 			<td>{{ $activos->numSerie }}</td>
@@ -52,7 +53,7 @@ background-color: #dddddd;
 					NO
 				@endif
 			</td>
-			<td>{{ $activos->numTrabajador }}</td>
+			<td>{{ $activos->id_trabajador }}</td>
 			<td>
 
 {{-- 		   	<a href="{{route('show',$activos)}}"><input type="button" value="ver"></a> --}}

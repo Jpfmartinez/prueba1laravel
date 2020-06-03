@@ -35,7 +35,7 @@
         @foreach ($depreciations as $depreciation)
         <tr>
             <td>{{ ++$i }}</td>
-            <td>{{ $depreciation->noInventario }}</td>
+            <td>{{ $depreciation->id_activofijo }}</td>
             <td>{{ $depreciation->tipo }}</td>
             <td>{{ $depreciation->descripcion }}</td>
             <td>{{ $depreciation->montoOriginal }}</td>
